@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>home</title>
+</head>
+<body>
+<div class="container">
+    <h1>Hello World</h1>
+    <a href="article/add/">Add Article</a>
+    <form action="/">
+        <input type="text" name="first" value="{{ first }}">
+        <input type="text" name="second" value="{{ second }}">
+        <input type="submit">
+
+        <p>Result: {{ result }}</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda at autem blanditiis corporis culpa
+            debitis dolorem enim facere fugiat id ipsam maiores, minus odio odit provident quae reprehenderit tempora
+            vel voluptatem! Distinctio magnam, numquam reiciendis reprehenderit similique vel vero.
+        </p>
+    </form>
+</div>
+</body>
+</html>
